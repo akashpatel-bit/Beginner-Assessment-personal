@@ -1,4 +1,4 @@
---
+--to return the footer calue orderd by ID
 SELECT 
     (SELECT CAR FROM footer_values WHERE CAR IS NOT NULL ORDER BY ID DESC LIMIT 1) AS CAR,
     (SELECT LENGTH FROM footer_values WHERE LENGTH IS NOT NULL ORDER BY ID DESC LIMIT 1) AS LENGTH,
